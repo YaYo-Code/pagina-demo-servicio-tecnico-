@@ -1128,6 +1128,87 @@ address {
     }
 }
 
+/* Sección Cómo Trabajamos */
+.como-trabajamos {
+    padding: var(--spacing-xl) var(--spacing-base);
+    background-color: white;
+    width: 100%;
+    max-width: none;
+    margin: 0;
+}
+
+.como-trabajamos h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    color: var(--color-primary);
+    margin-bottom: var(--spacing-base);
+}
+
+.seccion-intro {
+    text-align: center;
+    color: #6b7280;
+    font-size: 1.05rem;
+    max-width: 600px;
+    margin: 0 auto var(--spacing-xl);
+    padding: 0 var(--spacing-base);
+}
+
+.pasos-contenedor {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: var(--spacing-lg);
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.paso-item {
+    background: linear-gradient(135deg, rgba(30, 64, 175, 0.05) 0%, rgba(15, 118, 110, 0.05) 100%);
+    padding: var(--spacing-lg);
+    border-radius: 10px;
+    text-align: center;
+    transition: var(--transition);
+    border: 2px solid var(--color-border);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--spacing-base);
+    position: relative;
+}
+
+.paso-item:hover {
+    transform: translateY(-8px);
+    border-color: var(--color-accent);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    background: linear-gradient(135deg, rgba(30, 64, 175, 0.1) 0%, rgba(15, 118, 110, 0.1) 100%);
+}
+
+.paso-numero {
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-secondary) 100%);
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.8rem;
+    font-weight: 700;
+    flex-shrink: 0;
+}
+
+.paso-item h3 {
+    color: var(--color-primary);
+    font-size: 1.25rem;
+    margin: 0;
+}
+
+.paso-item p {
+    color: #6b7280;
+    font-size: 0.95rem;
+    margin: 0;
+    line-height: 1.6;
+}
+
 /* Animaciones */
 @keyframes fadeInUp {
     from {
